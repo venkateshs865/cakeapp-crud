@@ -1,3 +1,14 @@
+<style>
+	.form-group{
+		display : flex;
+	}
+	label{
+		display: block;
+    	font-size: 1.4rem !important;
+	    margin-bottom: 0 !important;
+		width: 30% !important;
+	}
+</style>
 <div class="row">
 	<div class="col-md-6 offset-md-4">
 		<div class="card">
