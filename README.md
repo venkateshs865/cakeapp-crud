@@ -2,21 +2,26 @@
 Created crud application with user authentication in cakephp 4
 
 ![1](https://user-images.githubusercontent.com/75470740/192968056-3239efb2-798f-4d2b-a4d7-2d7ab43153b9.png)
-Registration Page
+
+Registration Page :
 Here is registration page where user register with their Name, Email and password
 
 ![2](https://user-images.githubusercontent.com/75470740/192968415-da676d2e-13cd-4711-891d-4f4c500de75e.png)
-Login Page
+
+Login Page :
 In this page user login with already registered credentials 
 
 ![3](https://user-images.githubusercontent.com/75470740/192968889-ad2e9598-c174-46df-8209-d34958056968.png)
-Index page 
+
+Index page :
 In this page user add,view,update and delete all user details. Using logout button user logout from the page and redirect to login page
 
 ![4](https://user-images.githubusercontent.com/75470740/192969213-5af28266-047b-49ce-b06a-3857d94c7171.png)
-Add Page
+
+Add Page :
 In this page user can add their details and save it
 
 ![5](https://user-images.githubusercontent.com/75470740/192969512-012ee01f-667d-45f6-a039-6c8d34311767.png)
-Edit Page
+
+Edit Page :
 In this page user can update their details and also set status for every user if user is set as active it was shown in index page and if it was changed to Inactive it doesn't shown in index page.
