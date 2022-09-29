@@ -1,7 +1,7 @@
 # cakeapp-crud
 Created crud application with user authentication in cakephp 4
 
-![1](https://user-images.githubusercontent.com/75470740/192968056-3239efb2-798f-4d2b-a4d7-2d7ab43153b9.png)
+![image](https://user-images.githubusercontent.com/75470740/192976787-0f62a4f0-029e-46ec-8adc-6a37b40c9961.png)
 
 Registration Page :
 Here is registration page where user register with their Name, Email and password
