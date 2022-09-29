@@ -1,8 +1,20 @@
+<style>
+	.form-group{
+		display : flex;
+	}
+	label{
+		display: block;
+    	font-size: 1.4rem !important;
+	    margin-bottom: 0 !important;
+		width: 30% !important;
+	}
+</style>
 <div class="row">
 	<div class="col-md-6 offset-md-4">
 		<div class="card">
 			<div class="card-body">
 				<?php echo $this->Form->create($posts) ?>
+				<h4>Enter your details here</h4>
 					<div class="form-group">
 						<label>First Name</label>
 						<input type="text" name="fname" class="form-control">
