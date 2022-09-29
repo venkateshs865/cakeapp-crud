@@ -27,6 +27,8 @@ Edit Page :
 In this page user can update their details and also set status for every user if user is set as active it was shown in index page and if it was changed to Inactive it doesn't shown in index page.
 
 
+
+
 Installing CakePHP
 
 Before starting you should make sure that your PHP version is up to date:
