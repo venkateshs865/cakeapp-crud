@@ -25,3 +25,32 @@ In this page user can add their details and save it
 
 Edit Page :
 In this page user can update their details and also set status for every user if user is set as active it was shown in index page and if it was changed to Inactive it doesn't shown in index page.
+
+
+Installing CakePHP
+
+Before starting you should make sure that your PHP version is up to date:
+Open cmd and type below command
+php -v
+You should have PHP 7.4 (CLI) or higher. 
+
+After that download Composer and install it. 
+
+To create a CAKEPHP project
+
+=>Type this command on command prompt in the path of xampp/htdocs:
+composer create-project --prefer-dist cakephp/app:~4.0 app
+
+Connecting our project 
+
+=> Download our project as zip on your local and extract it. 
+=> Inside our project folder just copy all stuffs.
+=> Then open newly created cakephp folder and paste it then give keep files and replace.
+
+=> Then open folder bin from our application and run this command,
+bin/cake server
+=> It generates host and copy that host and paste it on browser.
+
+To connect with MYSQL
+
+=> Create database named as my_app and then import our my_app.sql file and run it 
