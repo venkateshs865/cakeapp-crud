@@ -9,10 +9,7 @@ class PostsController extends AppController{
 			'limit'=>'5'
 		];
 		// $posta = $this->paginate($this->Posts->find('all'));
-		// $posta = $this->paginate($this->Posts->find()->where(['status' => '0'])->all());
-		// $posta = $this->paginate($this->Posts->find()->where(['status' => '1'])->all());
-			// $posta = $this->Posts->find('list', array('conditions'=>array('status=' => 1)));
-			$posta = $this->paginate($this->Posts->find()->where([ 'status' => 0]));		
+			$posta = $this->paginate($this->Posts->find()->where([ 'status' => 0])->order(['fname' => 'DESC']));		
 		$this->set('posts',$posta);
 	}
 
@@ -31,25 +28,6 @@ class PostsController extends AppController{
 	public function add()
 	{
 		$postx = $this->Posts->newEntity($this->request->getData());
-		// $postxImage = $this->request->getData("image");
-
-		// $hasFileError = $postxImage->getError();
-
-		// if ($hasFileError > 0) {
-		// 	// no file uploaded
-		// 	$data["image"] = "";
-		// } else {
-		// 	// file uploaded
-		// 	$fileName = $postxImage->getClientFilename();
-		// 	$fileType = $postxImage->getClientMediaType();
-
-		// 	if ($fileType == "image/png" || $fileType == "image/jpeg" || $fileType == "image/jpg") {
-		// 		$imagePath = WWW_ROOT . "img/" . $fileName;
-		// 		$postxImage->moveTo($imagePath);
-		// 		$data["image"] = "img/" . $fileName;
-		// 	}
-		// }
-		
 		if ($this->request->is('post')) {
 			$postx = $this->Posts->patchEntity($postx, $this->request->getData());
 			$this->Posts->save($postx);
@@ -60,6 +38,7 @@ class PostsController extends AppController{
 
 	public function edit($id)
 	{
+		// $this->addBehavior('Timestamp');
 		$posty = $this->Posts->get($id);
 		if ($this->request->is(['post', 'put'])) {
 			$posty = $this->Posts->patchEntity($posty, $this->request->getData());
@@ -81,6 +60,7 @@ class PostsController extends AppController{
 		$this->set('weight', $posty->weight);
 		$this->set('gender', $posty->gender);
 		$this->set('image', $posty->image);
+		// $this->set('modified', date('d/m/Y'));
 		$this->set('posts', $posty);
 	}
 
